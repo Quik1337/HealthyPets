@@ -31,11 +31,6 @@ public class HealthyPets {
                 
                 JOptionPane.showMessageDialog(null,
                     "The " + a.getSpecies() + " " + a.getName() + " should get " + a.getFoodPortion() + "grams of " + a.getEats());
-            
-            else
-                animal = JOptionPane.showInputDialog(
-                    "Are you sure that the name of the animal was correct? \n\n" +
-                    "These are the animals that are staying at HealthyPets: ");
         }
     }
 
