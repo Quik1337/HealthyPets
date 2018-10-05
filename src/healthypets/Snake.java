@@ -1,6 +1,6 @@
 package healthypets;
 
-public final class Snake extends Animal {
+public final class Snake extends Animal implements FoodPortion{
     
     public Snake(String name,
                  String species,
@@ -8,6 +8,11 @@ public final class Snake extends Animal {
                  int weight) {
         
         super(name, species, eats, weight);
+    }
+    
+    public int getWeight() {
+        
+        return this.weight;
     }
     
     public int getFoodPortion() {
