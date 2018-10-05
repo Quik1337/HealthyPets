@@ -2,6 +2,7 @@ package healthypets;
 
 //Sätter klassen Animal som abstract då det inte skall skapas några objekt som
 //endast är av typen Animal. (för inkapslingens skull).
+
 //Också abstract så att kroppslösa abstrakta metoden ska gå att använda genom
 //(polymorphism) i sub-klasserna.
 public abstract class Animal {

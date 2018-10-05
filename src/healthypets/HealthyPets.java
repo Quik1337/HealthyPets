@@ -23,7 +23,8 @@ public class HealthyPets {
         animals.add(dogge);
         animals.add(hypno);
         
-        //Lägger alla djuren i en string där varje rad i stringen är ett djur med art och namn.
+        //Lägger alla djuren i en string där varje rad i stringen är ett djur
+        //med art och namn.
         String s = "";
         
         for (Animal a : animals) {
@@ -32,18 +33,20 @@ public class HealthyPets {
         }
         
         //Tar in användar-input.
-        String animal = JOptionPane.showInputDialog("Which animal is getting fed?");
+        String animal = JOptionPane.showInputDialog(
+            "Which animal is getting fed?");
         
         //En while-sats som går tills användaren skriver in ett djurs namn.
         boolean flag = true;
         
         while(flag) {
             
-            
             //Modifierar användar-input för att se till att matchar djurets namn. 
-            animal = animal.substring(0, 1).toUpperCase() + animal.substring(1).toLowerCase();
+            animal = animal.substring(0, 1).toUpperCase() +
+                     animal.substring(1).toLowerCase();
             
-            //Går igenom hela listan med djur och ser och användar-input överensstämmer med något djurs namn, om det gör det
+            //Går igenom hela listan med djur och ser och användar-input
+            //överensstämmer med något djurs namn, om det gör det
             //sätts flag till false och while-satsen avslutas.
             for (Animal a : animals) {
             
@@ -51,13 +54,14 @@ public class HealthyPets {
 
                     JOptionPane.showMessageDialog(null,
                         "The " + a.getSpecies() + " " + a.getName() + 
-                        " should get " + a.getFoodPortion() + "grams of " + a.getEats());
+                        " should get " + a.getFoodPortion() + " grams of " + a.getEats());
                     
                     flag = false;
                 }
             }
             
-            //Om användar-input inte överensstämde med något djurs namn (flag fortfarande true) så skrivs stringen s ut med alla djuren
+            //Om användar-input inte överensstämde med något djurs namn
+            //(flag fortfarande true) så skrivs stringen s ut med alla djuren
             //och användaren ombeds försöka skriva in ett djurs namn igen.
             if(flag) { 
                 
