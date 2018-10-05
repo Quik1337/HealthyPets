@@ -1,2 +1,18 @@
 
-src/healthypets/Food.java
+build.xml
+build/classes/.netbeans_automatic_build
+build/classes/.netbeans_update_resources
+build/classes/healthypets/Animal.class
+build/classes/healthypets/Cat.class
+build/classes/healthypets/Dog.class
+build/classes/healthypets/FoodPortion.class
+build/classes/healthypets/HealthyPets.class
+build/classes/healthypets/IHealthyPets.class
+build/classes/healthypets/Snake.class
+manifest.mf
+nbproject/build-impl.xml
+nbproject/genfiles.properties
+nbproject/private/private.properties
+nbproject/private/private.xml
+nbproject/project.properties
+nbproject/project.xml

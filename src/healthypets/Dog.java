@@ -26,8 +26,8 @@ public final class Dog extends Animal implements FoodPortion {
     }
     
     //Denna metod är abstrakt i super-klassen, vilket gör att när vi kallar
-    //ett objekt i main-klassen med dess super-klass så kan denna implementeras
-    //olika för de olika arterna. (Polymorphism)
+    //ett objekt i main-klassen med dess super-klass så kan denna metod användas
+    //med olika data för de olika arterna. (Polymorphism)
     
     //Denna metod finns även i det interface som implementeras av sub-klasserna,
     //det gör att denna metod MÅSTE anvädas i var och en av de klasser som
